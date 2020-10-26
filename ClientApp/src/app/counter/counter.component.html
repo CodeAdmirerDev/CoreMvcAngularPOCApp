@@ -31,7 +31,7 @@
 <ul *ngFor="let cs of freecourse" [ngSwitch]="cs.platform">
 
   <li *ngSwitchCase="'Youtube Channel'"
-      [ngClass]="{'text-danger':true}">
+      [ngClass]="{'text-danger':cs.platform=='Youtube Channel'}">
 
     <p>Course Name : {{cs.name}}</p>
     <p>Course Desc : {{cs.description}} </p>
@@ -39,7 +39,7 @@
 
   </li>
   <li *ngSwitchCase="'Facebook page'"
-        [ngClass]="{'text-primary':cs.platform=='Facebook page'}">
+        [ngClass]="{'text-primary':true}">
 
     <p>Course Name : {{cs.name}}</p>
     <p>Course Desc : {{cs.description}} </p>
