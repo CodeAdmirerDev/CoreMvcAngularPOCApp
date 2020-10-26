@@ -1,0 +1,62 @@
+<h1>This from Counter Component </h1>
+
+<p>This is a simple example of an Angular component.</p>
+
+<p aria-live="polite" appHighlight2>Current count: <strong>{{ currentCount }}</strong></p>
+
+
+
+<!-- Example of ngif-->
+<button (click)="toggle()">Hide/Show Counter button </button>
+<br />
+<br />
+
+<div *ngIf="displayCounter">
+  <button class="btn btn-primary" (click)="incrementCounter()">Increment</button>
+
+</div>
+
+<br />
+<br />
+
+<lable [ngStyle]="{color:'blue'}" for="exNgmodel">{{feetype}} cources information :</lable>
+<br />
+<br />
+<input  type="text" id="exNgmodel" [(ngModel)]="feetype"/>
+<br />
+<br />
+
+<!-- Example of ngfor-->
+
+<ul *ngFor="let cs of freecourse" [ngSwitch]="cs.platform">
+
+  <li *ngSwitchCase="'Youtube Channel'"
+      [ngClass]="{'text-danger':true}">
+
+    <p>Course Name : {{cs.name}}</p>
+    <p>Course Desc : {{cs.description}} </p>
+    <p> Learning platform :{{cs.platform}} </p>
+
+  </li>
+  <li *ngSwitchCase="'Facebook page'"
+        [ngClass]="{'text-primary':cs.platform=='Facebook page'}">
+
+    <p>Course Name : {{cs.name}}</p>
+    <p>Course Desc : {{cs.description}} </p>
+    <p> Learning platform :{{cs.platform}} </p>
+
+
+  <li *ngSwitchDefault
+    class="text-primary" >
+
+    <p>Course Name : {{cs.name}}</p>
+    <p>Course Desc : {{cs.description}} </p>
+    <p> Learning platform :{{cs.platform}} </p>
+
+  </li>
+
+</ul>
+
+
+
+

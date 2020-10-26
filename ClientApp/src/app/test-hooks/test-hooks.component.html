@@ -1,0 +1,14 @@
+<h6>Test hook Component</h6>
+<p>ngOnChanges calls : {{ lifecyclengOnChangescalls }}</p>
+<p>ngOnInit calls : {{ lifecyclengOnInitcalls }}</p>
+<p>DATA: {{ data }}</p>
+<h5 #ViewInitfire>This text background will change after the ngAfterViewInit fires </h5>
+<br />
+<br />
+<ng-content></ng-content>
+<br />
+<br />
+<div>
+  <button (click)="toggle()">Hide/Show Counter </button>
+  <app-counter-component *ngIf="displayCounter"></app-counter-component>
+</div>
