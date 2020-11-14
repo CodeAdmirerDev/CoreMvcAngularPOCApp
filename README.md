@@ -6,11 +6,13 @@ Welcome to our Git repo 🙏.
 
 Present problem :
 
-Most the people have the passion to learn the latest technology courses, but they cannot affordable of the #expensive trainings. 
+Most of the people have the passion to learn the latest technology courses, but they cannot affordable of the #expensive trainings. 
 
 Our solution :
 
-We are providing the software language courses #free of cost and we are going to uploading the latest technology course content in this channel . So that everyone can learn the things easily and it may helpful to achieve their dream job .
+We are providing the software language courses #free of cost and we are going to uploading the latest technology course content in the below channel . So that everyone can learn the things easily and it may helpful to achieve their dream job .
+
+https://youtube.com/c/FutureTechUpdates 
 
 I believe in the below quotation (my own quote) 👇
 Share the knowledge to everyone in the world 😊. 
