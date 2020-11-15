@@ -12,6 +12,9 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { TestHooksComponent } from './test-hooks/test-hooks.component';
 import { MytestComponentComponent } from './mytest-component/mytest-component.component';
 import { Highlight2Directive } from './highlight2.directive';
+import { FreecourseinfoService } from './freecourseinfo.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,7 @@ import { Highlight2Directive } from './highlight2.directive';
 
     ])
   ],
-  providers: [],
+  providers: [FreecourseinfoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
